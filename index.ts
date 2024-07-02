@@ -1,7 +1,10 @@
-import puppeteer from 'puppeteer';
+// index.ts
+import puppeteer from '@cloudflare/puppeteer';
+
 
 export default {
-    async fetch (request: Request, env: Env, ctx: ExecutionContext) : Promise<Response> {
+    async fetch (request: Request, env: Env) : Promise<Response> {
+        // launch browser and open an new blank page 
         const browser = await puppeteer.launch(env.MYBROWSER);
         const page = await browser.newPage();
 
