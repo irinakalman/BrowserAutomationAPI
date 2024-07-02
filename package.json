@@ -1,0 +1,8 @@
+{
+    "type": "module",
+    "dependencies": {
+      "puppeteer": "^10.0.0",
+      "node-fetch": "^3.0.0"
+    }
+  }
+  
